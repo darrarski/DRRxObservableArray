@@ -111,8 +111,15 @@ class ObservableArraySpec: QuickSpec {
                 }
 
                 context("when element inserted at index") {
+                    var observer: TestableObserver<ObservableArrayChangeEvent<String>>!
+
                     beforeEach {
+                        observer = self.createObserver(forSut: sut)
                         sut.insert("d", at: 1)
+                    }
+
+                    afterEach {
+                        observer = nil
                     }
 
                     it("should have correct elements") {
@@ -121,6 +128,13 @@ class ObservableArraySpec: QuickSpec {
 
                     it("should have correct count") {
                         expect(sut.count).to(equal(4))
+                    }
+
+                    it("should notify observers") {
+                        let expected = [
+                            next(0, ObservableArrayChangeEvent<String>.inserted(indices: [1], elements: ["d"]))
+                        ]
+                        expect(observer.events).to(equal(expected))
                     }
                 }
 

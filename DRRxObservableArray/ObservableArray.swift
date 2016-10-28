@@ -34,6 +34,7 @@ struct ObservableArray<T> {
 
     mutating func insert(_ element: T, at index: Int) {
         elements.insert(element, at: index)
+        eventsSubject.onNext(.inserted(indices: [index], elements: [element]))
     }
 
     mutating func removeFirst() -> T {
