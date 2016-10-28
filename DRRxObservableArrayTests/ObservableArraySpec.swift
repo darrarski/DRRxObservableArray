@@ -174,9 +174,16 @@ class ObservableArraySpec: QuickSpec {
 
                 context("when last element removed") {
                     var removedElement: String!
+                    var observer: TestableObserver<ObservableArrayChangeEvent<String>>!
 
                     beforeEach {
+                        observer = self.createObserver(forSut: sut)
                         removedElement = sut.removeLast()
+                    }
+
+                    afterEach {
+                        removedElement = nil
+                        observer = nil
                     }
 
                     it("should remove correct element") {
@@ -189,6 +196,13 @@ class ObservableArraySpec: QuickSpec {
 
                     it("should have correct count") {
                         expect(sut.count).to(equal(2))
+                    }
+
+                    it("should notify observers") {
+                        let expected = [
+                            next(0, ObservableArrayChangeEvent<String>.deleted(indices: [2], elements: ["c"]))
+                        ]
+                        expect(observer.events).to(equal(expected))
                     }
                 }
 
