@@ -29,4 +29,8 @@ struct ObservableArray<T> {
         elements.insert(element, at: index)
     }
 
+    mutating func removeFirst() -> T {
+        return elements.removeFirst()
+    }
+
 }

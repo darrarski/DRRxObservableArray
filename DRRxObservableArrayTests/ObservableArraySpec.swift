@@ -79,6 +79,26 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(4))
                     }
                 }
+
+                context("when first element removed") {
+                    var removedElement: String!
+
+                    beforeEach {
+                        removedElement = sut.removeFirst()
+                    }
+
+                    it("should remove correct element") {
+                        expect(removedElement).to(equal("a"))
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["b", "c"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(2))
+                    }
+                }
             }
         }
     }
