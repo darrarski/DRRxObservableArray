@@ -75,7 +75,11 @@ struct ObservableArray<T> {
             return elements[position]
         }
         set {
+            let oldElements = elements
             elements[position] = newValue
+            eventsSubject.onNext(.updated(indices: [position],
+                                          oldElements: [oldElements[position]],
+                                          newElements: [newValue]))
         }
     }
 

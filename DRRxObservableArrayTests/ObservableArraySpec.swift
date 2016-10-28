@@ -280,8 +280,11 @@ class ObservableArraySpec: QuickSpec {
                     }
                 }
 
-                context("when set-subscripted") {
+                context("when element replaced using subscript") {
+                    var observer: TestableObserver<ObservableArrayChangeEvent<String>>!
+
                     beforeEach {
+                        observer = self.createObserver(forSut: sut)
                         sut[1] = "d"
                     }
 
@@ -291,6 +294,13 @@ class ObservableArraySpec: QuickSpec {
 
                     it("should have correct count") {
                         expect(sut.count).to(equal(3))
+                    }
+
+                    it("should notify observers") {
+                        let expected = [
+                            next(0, ObservableArrayChangeEvent<String>.updated(indices: [1], oldElements: ["b"], newElements: ["d"]))
+                        ]
+                        expect(observer.events).to(equal(expected))
                     }
                 }
             }
