@@ -1,5 +1,7 @@
 # DRRxObservableArray
 
+[![Build Status](https://travis-ci.org/darrarski/DRRxObservableArray.svg?branch=master)](https://travis-ci.org/darrarski/DRRxObservableArray)
+
 Generic ObservableArray for RxSwift.
 
 **Work in progress**
