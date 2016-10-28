@@ -119,6 +119,26 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(2))
                     }
                 }
+
+                context("when element removed at index") {
+                    var removedElement: String!
+
+                    beforeEach {
+                        removedElement = sut.remove(at: 1)
+                    }
+
+                    it("should remove correct element") {
+                        expect(removedElement).to(equal("b"))
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["a", "c"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(2))
+                    }
+                }
             }
         }
     }

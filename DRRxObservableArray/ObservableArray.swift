@@ -37,4 +37,8 @@ struct ObservableArray<T> {
         return elements.removeLast()
     }
 
+    mutating func remove(at index: Int) -> T {
+        return elements.remove(at: index)
+    }
+
 }
