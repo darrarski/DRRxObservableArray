@@ -23,3 +23,11 @@ func ==<T: Equatable>(lhs: ObservableArrayChangeEvent<T>, rhs: ObservableArrayCh
         return false
     }
 }
+
+func ==<T: Equatable>(lhs: [ObservableArrayChangeEvent<T>], rhs: [ObservableArrayChangeEvent<T>]) -> Bool {
+    guard lhs.count == rhs.count else { return false }
+    for index in lhs.startIndex..<lhs.endIndex {
+        guard lhs[index] == rhs[index] else { return false }
+    }
+    return true
+}
