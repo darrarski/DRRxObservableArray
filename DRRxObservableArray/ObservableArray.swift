@@ -26,6 +26,7 @@ struct ObservableArray<T> {
     mutating func prepend(_ element: T) {
         let index = elements.startIndex
         elements.insert(element, at: index)
+        eventsSubject.onNext(.inserted(indices: [index], elements: [element]))
     }
 
     mutating func insert(_ element: T, at index: Int) {
