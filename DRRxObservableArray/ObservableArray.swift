@@ -33,4 +33,8 @@ struct ObservableArray<T> {
         return elements.removeFirst()
     }
 
+    mutating func removeLast() -> T {
+        return elements.removeLast()
+    }
+
 }
