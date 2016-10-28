@@ -1,3 +1,5 @@
+import RxSwift
+
 struct ObservableArray<T> {
 
     private(set) var elements: [T]
@@ -54,5 +56,11 @@ struct ObservableArray<T> {
             elements[position] = newValue
         }
     }
+
+    // MARK: Observables
+
+    private let eventsSubject = PublishSubject<ObservableArrayChangeEvent<T>>()
+
+    var events: Observable<ObservableArrayChangeEvent<T>> { return eventsSubject }
 
 }
