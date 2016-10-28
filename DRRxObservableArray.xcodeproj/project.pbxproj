@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		31E004241DC2DD650018E0B8 /* DRRxObservableArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */; };
+		31E004251DC2DD760018E0B8 /* DRRxObservableArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */; };
+		31E004261DC2DDC60018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
+		31E004271DC2DDC70018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
+		31E0040E1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRRxObservableArrayTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E004121DC2DC110018E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E0041A1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRRxObservableArrayTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31E0041E1DC2DC380018E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRRxObservableArrayTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31E0040B1DC2DC110018E0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E004171DC2DC380018E0B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31E003DB1DC2D81D0018E0B8 = {
+			isa = PBXGroup;
+			children = (
+				31E003F91DC2D9540018E0B8 /* DRRxObservableArray */,
+				31E004221DC2DD380018E0B8 /* DRRxObservableArrayTests */,
+				31E0040F1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS */,
+				31E0041B1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS */,
+				31E003E51DC2D81D0018E0B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		31E003E51DC2D81D0018E0B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31E0040E1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS.xctest */,
+				31E0041A1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31E003F91DC2D9540018E0B8 /* DRRxObservableArray */ = {
+			isa = PBXGroup;
+			children = (
+				31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */,
+			);
+			path = DRRxObservableArray;
+			sourceTree = "<group>";
+		};
+		31E0040F1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				31E004121DC2DC110018E0B8 /* Info.plist */,
+			);
+			path = "DRRxObservableArrayTests-iOS";
+			sourceTree = "<group>";
+		};
+		31E0041B1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				31E0041E1DC2DC380018E0B8 /* Info.plist */,
+			);
+			path = "DRRxObservableArrayTests-macOS";
+			sourceTree = "<group>";
+		};
+		31E004221DC2DD380018E0B8 /* DRRxObservableArrayTests */ = {
+			isa = PBXGroup;
+			children = (
+				31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */,
+			);
+			path = DRRxObservableArrayTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31E0040D1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E004131DC2DC110018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-iOS" */;
+			buildPhases = (
+				31E0040A1DC2DC110018E0B8 /* Sources */,
+				31E0040B1DC2DC110018E0B8 /* Frameworks */,
+				31E0040C1DC2DC110018E0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DRRxObservableArrayTests-iOS";
+			productName = "DRRxObservableArrayTests-iOS";
+			productReference = 31E0040E1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		31E004191DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31E0041F1DC2DC380018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-macOS" */;
+			buildPhases = (
+				31E004161DC2DC380018E0B8 /* Sources */,
+				31E004171DC2DC380018E0B8 /* Frameworks */,
+				31E004181DC2DC380018E0B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "DRRxObservableArrayTests-macOS";
+			productName = "DRRxObservableArrayTests-macOS";
+			productReference = 31E0041A1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31E003DC1DC2D81D0018E0B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Darrarski;
+				TargetAttributes = {
+					31E0040D1DC2DC110018E0B8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					31E004191DC2DC380018E0B8 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 31E003DF1DC2D81D0018E0B8 /* Build configuration list for PBXProject "DRRxObservableArray" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31E003DB1DC2D81D0018E0B8;
+			productRefGroup = 31E003E51DC2D81D0018E0B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31E0040D1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS */,
+				31E004191DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31E0040C1DC2DC110018E0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E004181DC2DC380018E0B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31E0040A1DC2DC110018E0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E004261DC2DDC60018E0B8 /* ObservableArray.swift in Sources */,
+				31E004241DC2DD650018E0B8 /* DRRxObservableArrayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31E004161DC2DC380018E0B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31E004271DC2DDC70018E0B8 /* ObservableArray.swift in Sources */,
+				31E004251DC2DD760018E0B8 /* DRRxObservableArrayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		31E003F41DC2D81E0018E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		31E003F51DC2D81E0018E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31E004141DC2DC110018E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DRRxObservableArrayTests-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.DRRxObservableArrayTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		31E004151DC2DC110018E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "DRRxObservableArrayTests-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.DRRxObservableArrayTests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		31E004201DC2DC380018E0B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "DRRxObservableArrayTests-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.DRRxObservableArrayTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		31E004211DC2DC380018E0B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "DRRxObservableArrayTests-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "pl.darrarski.DRRxObservableArrayTests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31E003DF1DC2D81D0018E0B8 /* Build configuration list for PBXProject "DRRxObservableArray" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E003F41DC2D81E0018E0B8 /* Debug */,
+				31E003F51DC2D81E0018E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E004131DC2DC110018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E004141DC2DC110018E0B8 /* Debug */,
+				31E004151DC2DC110018E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31E0041F1DC2DC380018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31E004201DC2DC380018E0B8 /* Debug */,
+				31E004211DC2DC380018E0B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31E003DC1DC2D81D0018E0B8 /* Project object */;
+}
