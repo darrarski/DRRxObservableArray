@@ -6,4 +6,8 @@ struct ObservableArray<T> {
         self.elements = elements
     }
 
+    var count: Int {
+        return elements.count
+    }
+
 }

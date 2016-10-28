@@ -19,6 +19,10 @@ class ObservableArraySpec: QuickSpec {
                 it("should have correct elements") {
                     expect(sut.elements).to(equal(["a", "b", "c"]))
                 }
+
+                it("should have correct count") {
+                    expect(sut.count).to(equal(3))
+                }
             }
         }
     }
