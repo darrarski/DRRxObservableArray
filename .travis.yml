@@ -1,6 +1,5 @@
 language: objective-c
 osx_image: xcode8
-language: swift
 cache: cocoapods  
 script:
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-macOS' | xcpretty
