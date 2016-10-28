@@ -139,6 +139,20 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(2))
                     }
                 }
+
+                context("when all elements removed") {
+                    beforeEach {
+                        sut.removeAll()
+                    }
+
+                    it("should have no elements") {
+                        expect(sut.elements).to(equal([]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(0))
+                    }
+                }
             }
         }
     }

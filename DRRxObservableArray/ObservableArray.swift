@@ -41,4 +41,9 @@ struct ObservableArray<T> {
         return elements.remove(at: index)
     }
 
+    mutating func removeAll() {
+        guard !elements.isEmpty else { return }
+        elements.removeAll()
+    }
+
 }
