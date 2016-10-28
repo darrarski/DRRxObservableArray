@@ -21,4 +21,8 @@ struct ObservableArray<T> {
         elements.insert(element, at: index)
     }
 
+    mutating func append(contentsOf newElements: [T]) {
+        elements.append(contentsOf: newElements)
+    }
+
 }

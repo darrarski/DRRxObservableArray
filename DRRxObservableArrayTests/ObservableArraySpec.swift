@@ -51,6 +51,20 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(4))
                     }
                 }
+
+                context("when elements appended") {
+                    beforeEach {
+                        sut.append(contentsOf: ["d", "e"])
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["a", "b", "c", "d", "e"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(5))
+                    }
+                }
             }
         }
     }
