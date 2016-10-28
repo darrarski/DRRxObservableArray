@@ -9,6 +9,7 @@ def pod_tests()
   pod 'Quick', '~> 0.10'
   pod 'Nimble', '~> 5.0'
   pod 'RxBlocking', '~> 3.0'
+  pod 'RxTest', '~> 3.0'
 end
 
 target 'DRRxObservableArrayTests-iOS' do

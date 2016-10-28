@@ -4,19 +4,23 @@ PODS:
   - RxBlocking (3.0.0):
     - RxSwift (~> 3.0)
   - RxSwift (3.0.0)
+  - RxTest (3.0.0):
+    - RxSwift (~> 3.0)
 
 DEPENDENCIES:
   - Nimble (~> 5.0)
   - Quick (~> 0.10)
   - RxBlocking (~> 3.0)
   - RxSwift (~> 3.0)
+  - RxTest (~> 3.0)
 
 SPEC CHECKSUMS:
   Nimble: 5ea121a2eda60440287054cde077fc0ad22227b3
   Quick: 5d290df1c69d5ee2f0729956dcf0fd9a30447eaa
   RxBlocking: 0132c660340d8b8f34b65b2e099167ea6134eecf
   RxSwift: a930cd662f5b4a7ca9dc3518585dba91dadf497c
+  RxTest: 770511db5d602b618ee8c8a7c06b4b71f9168f7c
 
-PODFILE CHECKSUM: a3cff58c085a715a80016bec4653db8f6784388d
+PODFILE CHECKSUM: ba58414a673b103097cbec9adbb26cfd1692785a
 
 COCOAPODS: 1.1.1
