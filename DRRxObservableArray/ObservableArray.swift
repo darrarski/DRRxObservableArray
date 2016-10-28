@@ -25,4 +25,8 @@ struct ObservableArray<T> {
         elements.insert(element, at: index)
     }
 
+    mutating func insert(_ element: T, at index: Int) {
+        elements.insert(element, at: index)
+    }
+
 }
