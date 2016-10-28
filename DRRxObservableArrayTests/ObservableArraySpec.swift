@@ -153,6 +153,32 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(0))
                     }
                 }
+
+                context("when get-subscripted") {
+                    var element: String!
+
+                    beforeEach {
+                        element = sut[1]
+                    }
+
+                    it("should return correct element") {
+                        expect(element).to(equal("b"))
+                    }
+                }
+
+                context("when set-subscripted") {
+                    beforeEach {
+                        sut[1] = "d"
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["a", "d", "c"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(3))
+                    }
+                }
             }
         }
     }

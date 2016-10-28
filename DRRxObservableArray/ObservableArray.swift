@@ -46,4 +46,13 @@ struct ObservableArray<T> {
         elements.removeAll()
     }
 
+    subscript(position: Int) -> T {
+        get {
+            return elements[position]
+        }
+        set {
+            elements[position] = newValue
+        }
+    }
+
 }
