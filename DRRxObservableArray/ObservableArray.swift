@@ -20,7 +20,10 @@ struct ObservableArray<T> {
     }
 
     mutating func append(contentsOf newElements: [T]) {
+        guard newElements.count > 0 else { return }
+        let end = elements.count
         elements.append(contentsOf: newElements)
+        eventsSubject.onNext(.inserted(indices: Array(end..<elements.count), elements: newElements))
     }
 
     mutating func prepend(_ element: T) {
