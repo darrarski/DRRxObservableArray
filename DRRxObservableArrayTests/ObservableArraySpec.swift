@@ -37,6 +37,20 @@ class ObservableArraySpec: QuickSpec {
                         expect(sut.count).to(equal(4))
                     }
                 }
+
+                context("when element prepended") {
+                    beforeEach {
+                        sut.prepend("d")
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["d", "a", "b", "c"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(4))
+                    }
+                }
             }
         }
     }

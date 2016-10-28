@@ -16,4 +16,9 @@ struct ObservableArray<T> {
         elements.append(element)
     }
 
+    mutating func prepend(_ element: T) {
+        let index = elements.startIndex
+        elements.insert(element, at: index)
+    }
+
 }
