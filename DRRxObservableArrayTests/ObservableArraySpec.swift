@@ -23,6 +23,20 @@ class ObservableArraySpec: QuickSpec {
                 it("should have correct count") {
                     expect(sut.count).to(equal(3))
                 }
+
+                context("when element appended") {
+                    beforeEach {
+                        sut.append("d")
+                    }
+
+                    it("should have correct elements") {
+                        expect(sut.elements).to(equal(["a", "b", "c", "d"]))
+                    }
+
+                    it("should have correct count") {
+                        expect(sut.count).to(equal(4))
+                    }
+                }
             }
         }
     }

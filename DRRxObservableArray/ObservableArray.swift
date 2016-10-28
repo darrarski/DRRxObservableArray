@@ -10,4 +10,10 @@ struct ObservableArray<T> {
         return elements.count
     }
 
+    // MARK: Mutating
+
+    mutating func append(_ element: T) {
+        elements.append(element)
+    }
+
 }
