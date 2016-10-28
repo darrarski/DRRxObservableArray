@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3126767B1DC3C7B4000EE380 /* ObservableArrayChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126767A1DC3C7B4000EE380 /* ObservableArrayChangeEvent.swift */; };
 		3126767C1DC3C7B9000EE380 /* ObservableArrayChangeEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126767A1DC3C7B4000EE380 /* ObservableArrayChangeEvent.swift */; };
+		3126767E1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126767D1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift */; };
+		3126767F1DC3CA32000EE380 /* ObservableArrayChangeEventSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3126767D1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift */; };
 		31E004261DC2DDC60018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
 		31E004271DC2DDC70018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
 		31E004291DC2E2810018E0B8 /* ObservableArraySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E004281DC2E2810018E0B8 /* ObservableArraySpec.swift */; };
@@ -19,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3126767A1DC3C7B4000EE380 /* ObservableArrayChangeEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableArrayChangeEvent.swift; sourceTree = "<group>"; };
+		3126767D1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableArrayChangeEventSpec.swift; sourceTree = "<group>"; };
 		31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
 		31E0040E1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRRxObservableArrayTests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E004121DC2DC110018E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				31E004281DC2E2810018E0B8 /* ObservableArraySpec.swift */,
+				3126767D1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift */,
 			);
 			path = DRRxObservableArrayTests;
 			sourceTree = "<group>";
@@ -327,6 +331,7 @@
 			files = (
 				3126767B1DC3C7B4000EE380 /* ObservableArrayChangeEvent.swift in Sources */,
 				31E004261DC2DDC60018E0B8 /* ObservableArray.swift in Sources */,
+				3126767E1DC3C9B9000EE380 /* ObservableArrayChangeEventSpec.swift in Sources */,
 				31E004291DC2E2810018E0B8 /* ObservableArraySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +342,7 @@
 			files = (
 				3126767C1DC3C7B9000EE380 /* ObservableArrayChangeEvent.swift in Sources */,
 				31E004271DC2DDC70018E0B8 /* ObservableArray.swift in Sources */,
+				3126767F1DC3CA32000EE380 /* ObservableArrayChangeEventSpec.swift in Sources */,
 				31E0042A1DC2E2A80018E0B8 /* ObservableArraySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
