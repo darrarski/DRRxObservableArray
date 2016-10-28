@@ -16,6 +16,7 @@ struct ObservableArray<T> {
 
     mutating func append(_ element: T) {
         elements.append(element)
+        eventsSubject.onNext(.inserted(indices: [elements.count - 1], elements: [element]))
     }
 
     mutating func append(contentsOf newElements: [T]) {

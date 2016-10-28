@@ -1,5 +1,6 @@
 import Quick
 import Nimble
+import RxSwift
 
 class ObservableArraySpec: QuickSpec {
 
@@ -25,7 +26,10 @@ class ObservableArraySpec: QuickSpec {
                 }
 
                 context("when element appended") {
+                    var event: ObservableArrayChangeEvent<String>!
+
                     beforeEach {
+                        let _ = sut.events.subscribe(onNext: { event = $0 })
                         sut.append("d")
                     }
 
@@ -35,6 +39,11 @@ class ObservableArraySpec: QuickSpec {
 
                     it("should have correct count") {
                         expect(sut.count).to(equal(4))
+                    }
+
+                    it("should notify observers") {
+                        let expectedEvent = ObservableArrayChangeEvent<String>.inserted(indices: [3], elements: ["d"])
+                        expect(event).to(equal(expectedEvent))
                     }
                 }
 
