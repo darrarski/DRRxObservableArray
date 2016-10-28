@@ -64,8 +64,10 @@ struct ObservableArray<T> {
     }
 
     mutating func removeAll() {
-        guard !elements.isEmpty else { return }
-        elements.removeAll()
+        guard !self.elements.isEmpty else { return }
+        let elements = self.elements
+        self.elements.removeAll()
+        eventsSubject.onNext(.deleted(indices: Array(elements.startIndex..<elements.endIndex), elements: elements))
     }
 
     subscript(position: Int) -> T {

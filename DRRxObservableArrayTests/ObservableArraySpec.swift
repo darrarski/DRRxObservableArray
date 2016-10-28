@@ -241,8 +241,15 @@ class ObservableArraySpec: QuickSpec {
                 }
 
                 context("when all elements removed") {
+                    var observer: TestableObserver<ObservableArrayChangeEvent<String>>!
+
                     beforeEach {
+                        observer = self.createObserver(forSut: sut)
                         sut.removeAll()
+                    }
+
+                    afterEach {
+                        observer = nil
                     }
 
                     it("should have no elements") {
@@ -251,6 +258,13 @@ class ObservableArraySpec: QuickSpec {
 
                     it("should have correct count") {
                         expect(sut.count).to(equal(0))
+                    }
+
+                    it("should notify observers") {
+                        let expected = [
+                            next(0, ObservableArrayChangeEvent<String>.deleted(indices: [0, 1, 2], elements: ["a", "b", "c"]))
+                        ]
+                        expect(observer.events).to(equal(expected))
                     }
                 }
 
