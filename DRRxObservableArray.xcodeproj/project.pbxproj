@@ -11,6 +11,8 @@
 		31E004251DC2DD760018E0B8 /* DRRxObservableArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */; };
 		31E004261DC2DDC60018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
 		31E004271DC2DDC70018E0B8 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E003FA1DC2D9640018E0B8 /* ObservableArray.swift */; };
+		D560F5C9D0596C9DC7DCC76E /* Pods_DRRxObservableArrayTests_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AC111E6CB5B0049F59787D4 /* Pods_DRRxObservableArrayTests_macOS.framework */; };
+		D927DEAF06EE90953A98CA3D /* Pods_DRRxObservableArrayTests_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC189699F7AD6B6C45981C0 /* Pods_DRRxObservableArrayTests_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,12 @@
 		31E0041A1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DRRxObservableArrayTests-macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E0041E1DC2DC380018E0B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31E004231DC2DD650018E0B8 /* DRRxObservableArrayTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DRRxObservableArrayTests.swift; sourceTree = "<group>"; };
+		3DF3BC630925F986BE72C94C /* Pods-DRRxObservableArrayTests-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRxObservableArrayTests-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRxObservableArrayTests-iOS/Pods-DRRxObservableArrayTests-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		57B05E16338DCB9F9CE32D64 /* Pods-DRRxObservableArrayTests-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRxObservableArrayTests-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRxObservableArrayTests-macOS/Pods-DRRxObservableArrayTests-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		7408B2957CD17A200D85CEF1 /* Pods-DRRxObservableArrayTests-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRxObservableArrayTests-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRxObservableArrayTests-iOS/Pods-DRRxObservableArrayTests-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		9AC111E6CB5B0049F59787D4 /* Pods_DRRxObservableArrayTests_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRxObservableArrayTests_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC189699F7AD6B6C45981C0 /* Pods_DRRxObservableArrayTests_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRxObservableArrayTests_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3C77495505BC6616B08C146 /* Pods-DRRxObservableArrayTests-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRxObservableArrayTests-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRxObservableArrayTests-macOS/Pods-DRRxObservableArrayTests-macOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D927DEAF06EE90953A98CA3D /* Pods_DRRxObservableArrayTests_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D560F5C9D0596C9DC7DCC76E /* Pods_DRRxObservableArrayTests_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +57,8 @@
 				31E004221DC2DD380018E0B8 /* DRRxObservableArrayTests */,
 				31E0040F1DC2DC110018E0B8 /* DRRxObservableArrayTests-iOS */,
 				31E0041B1DC2DC380018E0B8 /* DRRxObservableArrayTests-macOS */,
+				ED10E17AE75ED77BBB405F62 /* Frameworks */,
+				DD22245039850EC30BECF191 /* Pods */,
 				31E003E51DC2D81D0018E0B8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +104,26 @@
 			path = DRRxObservableArrayTests;
 			sourceTree = "<group>";
 		};
+		DD22245039850EC30BECF191 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3DF3BC630925F986BE72C94C /* Pods-DRRxObservableArrayTests-iOS.debug.xcconfig */,
+				7408B2957CD17A200D85CEF1 /* Pods-DRRxObservableArrayTests-iOS.release.xcconfig */,
+				E3C77495505BC6616B08C146 /* Pods-DRRxObservableArrayTests-macOS.debug.xcconfig */,
+				57B05E16338DCB9F9CE32D64 /* Pods-DRRxObservableArrayTests-macOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED10E17AE75ED77BBB405F62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC189699F7AD6B6C45981C0 /* Pods_DRRxObservableArrayTests_iOS.framework */,
+				9AC111E6CB5B0049F59787D4 /* Pods_DRRxObservableArrayTests_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -99,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31E004131DC2DC110018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-iOS" */;
 			buildPhases = (
+				F262341611A7CE1A9B506ED3 /* [CP] Check Pods Manifest.lock */,
 				31E0040A1DC2DC110018E0B8 /* Sources */,
 				31E0040B1DC2DC110018E0B8 /* Frameworks */,
 				31E0040C1DC2DC110018E0B8 /* Resources */,
+				57FA0089932204C252FDE09F /* [CP] Embed Pods Frameworks */,
+				402FECDADEA3A4B4DA877FFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -116,9 +151,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31E0041F1DC2DC380018E0B8 /* Build configuration list for PBXNativeTarget "DRRxObservableArrayTests-macOS" */;
 			buildPhases = (
+				FE756729A4FEC60BF13E8263 /* [CP] Check Pods Manifest.lock */,
 				31E004161DC2DC380018E0B8 /* Sources */,
 				31E004171DC2DC380018E0B8 /* Frameworks */,
 				31E004181DC2DC380018E0B8 /* Resources */,
+				5113789CEA5EE2353D206A6A /* [CP] Embed Pods Frameworks */,
+				B59952A435F22704833C4DED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,6 +222,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		402FECDADEA3A4B4DA877FFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRRxObservableArrayTests-iOS/Pods-DRRxObservableArrayTests-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5113789CEA5EE2353D206A6A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRRxObservableArrayTests-macOS/Pods-DRRxObservableArrayTests-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57FA0089932204C252FDE09F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRRxObservableArrayTests-iOS/Pods-DRRxObservableArrayTests-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B59952A435F22704833C4DED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DRRxObservableArrayTests-macOS/Pods-DRRxObservableArrayTests-macOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F262341611A7CE1A9B506ED3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE756729A4FEC60BF13E8263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31E0040A1DC2DC110018E0B8 /* Sources */ = {
@@ -300,6 +431,7 @@
 		};
 		31E004141DC2DC110018E0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF3BC630925F986BE72C94C /* Pods-DRRxObservableArrayTests-iOS.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "DRRxObservableArrayTests-iOS/Info.plist";
@@ -312,6 +444,7 @@
 		};
 		31E004151DC2DC110018E0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7408B2957CD17A200D85CEF1 /* Pods-DRRxObservableArrayTests-iOS.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = "";
@@ -325,6 +458,7 @@
 		};
 		31E004201DC2DC380018E0B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3C77495505BC6616B08C146 /* Pods-DRRxObservableArrayTests-macOS.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -340,6 +474,7 @@
 		};
 		31E004211DC2DC380018E0B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57B05E16338DCB9F9CE32D64 /* Pods-DRRxObservableArrayTests-macOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
