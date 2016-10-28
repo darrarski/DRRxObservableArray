@@ -1,6 +1,7 @@
 import Quick
 import Nimble
 import RxSwift
+import RxTest
 
 class ObservableArraySpec: QuickSpec {
 
@@ -26,11 +27,15 @@ class ObservableArraySpec: QuickSpec {
                 }
 
                 context("when element appended") {
-                    var event: ObservableArrayChangeEvent<String>!
+                    var observer: TestableObserver<ObservableArrayChangeEvent<String>>!
 
                     beforeEach {
-                        let _ = sut.events.subscribe(onNext: { event = $0 })
+                        observer = self.createObserver(forSut: sut)
                         sut.append("d")
+                    }
+
+                    afterEach {
+                        observer = nil
                     }
 
                     it("should have correct elements") {
@@ -42,8 +47,10 @@ class ObservableArraySpec: QuickSpec {
                     }
 
                     it("should notify observers") {
-                        let expectedEvent = ObservableArrayChangeEvent<String>.inserted(indices: [3], elements: ["d"])
-                        expect(event).to(equal(expectedEvent))
+                        let expected = [
+                            next(0, ObservableArrayChangeEvent<String>.inserted(indices: [3], elements: ["d"]))
+                        ]
+                        expect(observer.events).to(equal(expected))
                     }
                 }
 
@@ -190,6 +197,14 @@ class ObservableArraySpec: QuickSpec {
                 }
             }
         }
+    }
+
+    private func createObserver(forSut sut: ObservableArray<String>) -> TestableObserver<ObservableArrayChangeEvent<String>> {
+        let scheduler = TestScheduler(initialClock: 0)
+        let observer = scheduler.createObserver(ObservableArrayChangeEvent<String>.self)
+        let _ = sut.events.subscribe(observer)
+        scheduler.start()
+        return observer
     }
 
 }
