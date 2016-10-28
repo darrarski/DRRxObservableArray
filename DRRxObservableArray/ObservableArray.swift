@@ -56,7 +56,11 @@ struct ObservableArray<T> {
     }
 
     mutating func remove(at index: Int) -> T {
-        return elements.remove(at: index)
+        let element = elements.remove(at: index)
+        defer {
+            eventsSubject.onNext(.deleted(indices: [index], elements: [element]))
+        }
+        return element
     }
 
     mutating func removeAll() {
