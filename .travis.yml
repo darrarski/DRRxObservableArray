@@ -2,9 +2,9 @@ language: objective-c
 osx_image: xcode8
 rvm:
   - 2.3.0
-cache: 
-  - bundler
-  - cocoapods
+cache:
+  bundler: true
+  cocoapods: true
   directories:
     - /Users/travis/Library/Developer/Xcode/DerivedData
 install:
