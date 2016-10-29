@@ -3,12 +3,11 @@ osx_image: xcode8
 cache: 
   - bundler
   - cocoapods
-before_install:
-  - rvm install ruby-2.3.0
-  - rvm use ruby-2.3.0 
 install:
+  - rvm install ruby-2.3.0
+  - rvm use ruby-2.3.0
+  - gem install bundler
   - bundle install
-before_script:
   - bundle exec pod repo update > /dev/null
   - bundle exec pod install
 script:
