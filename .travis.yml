@@ -6,7 +6,6 @@ before_install:
   - rvm use ruby-2.3.0 
 install:
   - bundle install
-  - bundle exec pod repo update
 before_script:
   - bundle exec pod install
 script:
