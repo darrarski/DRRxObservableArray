@@ -1,11 +1,13 @@
 language: objective-c
 osx_image: xcode8
+cache: cocoapods
 before_install:
   - rvm install ruby-2.3.0
   - rvm use ruby-2.3.0 
 install:
   - bundle install
 before_script:
+  - bundle exec pod repo update > /dev/null
   - bundle exec pod install
 script:
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-macOS' | xcpretty
