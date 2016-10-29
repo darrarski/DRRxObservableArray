@@ -6,7 +6,6 @@ cache:
 install:
   - rvm install ruby-2.3.0
   - rvm use ruby-2.3.0
-  - gem install bundler
   - bundle install
   - bundle exec pod repo update > /dev/null
   - bundle exec pod install
