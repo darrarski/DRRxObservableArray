@@ -7,8 +7,7 @@ install:
   - rvm install ruby-2.3.0
   - rvm use ruby-2.3.0
   - bundle install --without=documentation
-  - bundle exec pod repo update > /dev/null
-  - bundle exec pod install
+  - bundle exec pod install --repo-update
 script:
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-macOS' | xcpretty
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-iOS' -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest' ONLY_ACTIVE_ARCH=NO | xcpretty
