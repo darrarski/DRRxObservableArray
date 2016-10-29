@@ -5,6 +5,8 @@ rvm:
 cache: 
   - bundler
   - cocoapods
+  directories:
+    - /Users/travis/Library/Developer/Xcode/DerivedData
 install:
   - bundle install --without=documentation
   - bundle exec pod install --repo-update
