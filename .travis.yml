@@ -7,8 +7,8 @@ before_install:
 install:
   - bundle install
 before_script:
+  - bundle exec pod repo update > /dev/null
   - bundle exec pod install
-  - bundle exec pod repo update > /dev/null 2>&1
 script:
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-macOS' | xcpretty
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-iOS' -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest' ONLY_ACTIVE_ARCH=NO | xcpretty
