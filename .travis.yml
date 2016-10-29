@@ -15,3 +15,4 @@ install:
 script:
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-macOS' | xcpretty
   - set -o pipefail && xcodebuild test -workspace DRRxObservableArray.xcworkspace -scheme 'DRRxObservableArrayTests-iOS' -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest' ONLY_ACTIVE_ARCH=NO | xcpretty
+
