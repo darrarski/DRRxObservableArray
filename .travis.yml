@@ -1,11 +1,11 @@
 language: objective-c
 osx_image: xcode8
+rvm:
+  - 2.3.0
 cache: 
   - bundler
   - cocoapods
 install:
-  - rvm install ruby-2.3.0
-  - rvm use ruby-2.3.0
   - bundle install --without=documentation
   - bundle exec pod install --repo-update
 script:
