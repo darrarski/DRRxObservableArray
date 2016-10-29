@@ -8,6 +8,7 @@ cache:
   cocoapods: true
   directories:
     - $HOME/Library/Developer/Xcode/DerivedData
+    - Pods
 install:
   - bundle install --without=documentation
   - bundle exec pod install --repo-update
