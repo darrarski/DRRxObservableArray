@@ -6,7 +6,7 @@ cache:
 install:
   - rvm install ruby-2.3.0
   - rvm use ruby-2.3.0
-  - bundle install
+  - bundle install --without=documentation
   - bundle exec pod repo update > /dev/null
   - bundle exec pod install
 script:
