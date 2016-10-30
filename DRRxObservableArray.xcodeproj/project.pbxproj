@@ -186,7 +186,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Darrarski;
 				TargetAttributes = {
 					31E0040D1DC2DC110018E0B8 = {
@@ -374,6 +374,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -423,6 +424,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -451,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3DF3BC630925F986BE72C94C /* Pods-DRRxObservableArrayTests-iOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "DRRxObservableArrayTests-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -464,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7408B2957CD17A200D85CEF1 /* Pods-DRRxObservableArrayTests-iOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "DRRxObservableArrayTests-iOS/Info.plist";
@@ -478,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3C77495505BC6616B08C146 /* Pods-DRRxObservableArrayTests-macOS.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DRRxObservableArrayTests-macOS/Info.plist";
@@ -494,6 +499,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 57B05E16338DCB9F9CE32D64 /* Pods-DRRxObservableArrayTests-macOS.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "DRRxObservableArrayTests-macOS/Info.plist";
