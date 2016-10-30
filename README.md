@@ -14,7 +14,7 @@ Example usage:
 import RxSwift
 import DRRxObservableArray
 
-let observableArray = ObservableArray(["a", "b", "c"])
+var observableArray = ObservableArray(["a", "b", "c"])
 let _ = observableArray.events.subscribe(onNext: { event in 
 	switch event {
 		case .inserted(let indices, let elements):
