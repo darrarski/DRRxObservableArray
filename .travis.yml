@@ -2,7 +2,13 @@ language: objective-c
 osx_image: xcode8
 rvm:
   - 2.3.0
-cache: false
+cache:
+  timeout: 86400    
+  bundler: true   
+  cocoapods: true   
+  directories:    
+    - /Users/travis/Library/Developer/Xcode/DerivedData
+    - Pods
 install:
   - bundle install --without=documentation
   - bundle exec pod install --repo-update
