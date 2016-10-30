@@ -22,4 +22,3 @@ Check out included unit tests.
 ## License
 
 The MIT License (MIT) - check out included [LICENSE](LICENSE) file
-
