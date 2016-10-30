@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/darrarski/DRRxObservableArray.svg?branch=master)](https://travis-ci.org/darrarski/DRRxObservableArray)
 [![Build Status](https://www.bitrise.io/app/356423c9027ca736.svg?token=WzKYsUY7V8chfcbJ-xAcxw)](https://www.bitrise.io/app/356423c9027ca736)
+[![CocoaPods](https://img.shields.io/cocoapods/v/DRRxObservableArray.svg)](https://cocoapods.org/pods/DRRxObservableArray)
 
 Generic dbservable array for RxSwift. When its content changes (elements are inserted, removed or updated) it emits events from `events` Observable.
 
@@ -39,7 +40,7 @@ Check out included unit tests for more examples.
 
 ## Instalation
 
-You can integrate `DRRxObservableArray ` with your project using CocoaPods. To do so, you will need to add following line to your Podfile:
+You can integrate `DRRxObservableArray` with your project using CocoaPods. To do so, you will need to add following line to your Podfile:
 
     pod 'DRRxObservableArray', '~> 1.0'
 
