@@ -4,7 +4,7 @@
 [![Build Status](https://www.bitrise.io/app/356423c9027ca736.svg?token=WzKYsUY7V8chfcbJ-xAcxw)](https://www.bitrise.io/app/356423c9027ca736)
 [![CocoaPods](https://img.shields.io/cocoapods/v/DRRxObservableArray.svg)](https://cocoapods.org/pods/DRRxObservableArray)
 
-Generic dbservable array for RxSwift. When its content changes (elements are inserted, removed or updated) it emits events from `events` Observable.
+Generic observable array for RxSwift. When its content changes (elements are inserted, removed or updated) it emits events from `events` Observable.
 
 ## Usage
 
