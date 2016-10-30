@@ -13,13 +13,13 @@ def pod_tests()
 end
 
 target 'DRRxObservableArrayTests-iOS' do
-  platform :ios, '10.0'
+  platform :ios, '8.0'
   pod_dependencies()
   pod_tests()
 end
 
 target 'DRRxObservableArrayTests-macOS' do
-  platform :osx, '10.12'
+  platform :osx, '10.10'
   pod_dependencies()
   pod_tests()
 end
