@@ -10,7 +10,7 @@ Generic ObservableArray for RxSwift.
 - [x] initial implementation
 - [x] unit tests
 - [ ] brief description
-- [ ] full documentation
+- [x] full documentation
 - [x] continuos integration
 - [ ] CocoaPods
 - [ ] `UITableView` and `UICollectionView` bindings
